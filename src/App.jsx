@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -12,6 +12,9 @@ import linkdin from "./assets/svg/linkedin.svg";
 import github from "./assets/svg/github.svg";
 import email from "./assets/svg/email.svg";
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 function App() {
   useGSAP(() => {
     gsap.from(".hero-text", {
@@ -20,37 +23,49 @@ function App() {
       duration: 1,
       scale: 0.2,
     });
-    // Buttons Animation
     gsap.from(".buttons a", {
       y: 50,
       opacity: 0,
       duration: 1,
       stagger: 0.2,
     });
-    // Page 2
+    // page2
     gsap.from(".imgSide1", {
       opacity: 0,
       duration: 2,
       x: 300,
+      scrollTrigger: {
+        trigger: ".imgSide1",
+        scroller: "body",
+        markers: true,
+        start: "top 60%",
+      },
     });
     gsap.from(".imgSide2", {
       opacity: 0,
       duration: 2,
       x: -300,
+      scrollTrigger: {
+        trigger: ".imgSide1",
+        scroller: "body",
+        markers: true,
+        start: "top 60%",
+      },
     });
-
+    // page3
     gsap.from(".pages3 a", {
       scale: 0,
-      duration: 1,
+      duration: 2,
       rotate: 360,
       scrollTrigger: {
         trigger: ".pages3 a",
         scroller: "body",
         markers: true,
-        start: "top 20%",
+        start: "top 80%",
       },
     });
   });
+
   return (
     <>
       <div className="container pages1">
@@ -84,12 +99,11 @@ function App() {
         </p>
         <img className="imgSide1" src={computer} width={500} height={410} />
       </div>
+      <div className="text-center ">
+        <h1>Contact Me</h1>
+      </div>
       <div className="container pages3">
-        <a
-          href="https://wa.me/qr/6P63ABIWYGVSH1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://wa.me/qr/6P63ABIWYGVSH1" target="_blank">
           <img
             className="logo whatsapp "
             src={whatsapp}
@@ -101,7 +115,6 @@ function App() {
         <a
           href="https://www.linkedin.com/in/divyesh-solanki-01628a254/"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <img
             className="logo"
@@ -111,11 +124,7 @@ function App() {
             height={200}
           />
         </a>
-        <a
-          href="https://github.com/Divyeshs2303"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/Divyeshs2303" target="_blank">
           <img
             className="logo github"
             src={github}
@@ -127,7 +136,6 @@ function App() {
         <a
           href="mailto:divyeshsolanki2303@gmail.com" /* Replace with your email */
           target="_blank"
-          rel="noopener noreferrer"
         >
           <img
             className="logo email"
