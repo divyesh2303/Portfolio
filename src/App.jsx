@@ -36,8 +36,8 @@ function App() {
       x: 300,
       scrollTrigger: {
         trigger: ".imgSide1",
-        scroller: "body",
-        markers: true,
+        // scroller: "body",
+        markers: false,
         start: "top 60%",
       },
     });
@@ -47,9 +47,9 @@ function App() {
       x: -300,
       scrollTrigger: {
         trigger: ".imgSide1",
-        scroller: "body",
-        // markers: true,
+        // scroller: "body",
         start: "top 60%",
+        markers: false,
       },
     });
     // page3
@@ -58,10 +58,9 @@ function App() {
       duration: 2,
       rotate: 360,
       scrollTrigger: {
-        trigger: ".pages3 a",
-        scroller: "body",
-        // markers: true,
+        trigger: ".pages3",
         start: "top bottom",
+        markers: false, // Disable markers
       },
     });
   });

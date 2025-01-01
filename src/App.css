@@ -175,12 +175,8 @@ body {
 
 @media (max-width: 768px) {
   .pages3 {
-    /* height: 100vh; */
-
     display: flex;
     flex-wrap: wrap;
-    /* position: absolute; */
-    /* top: 234vh; */
     height: unset;
   }
 
@@ -192,8 +188,6 @@ body {
 
 @media (max-width: 480px) {
   .pages3 {
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
     height: 62vh;
     padding: 20px;
     margin: 0;
@@ -205,17 +199,3 @@ body {
     object-fit: cover;
   }
 }
-
-/* @media (max-width: 768px) {
-  .hero-text {
-    font-size: 1.2rem;
-  }
-  .buttons a {
-    margin: 5px;
-  }
-}
-
-.imgSide1,
-.imgSide2 {
-  will-change: transform, opacity;
-} */
