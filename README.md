@@ -1,8 +1,36 @@
-# React + Vite
+Here’s a description for your GitHub README based on the content in the screenshot:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Hi, I'm Divyesh! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend Developer | Crafting Accessible and Performant Web Experiences
+
+I’m passionate about building beautiful, accessible, and high-performance web applications. Currently pursuing an **integrated MCA**, I specialize in:
+
+- **React.js** and **Redux**
+- Creating APIs
+- Animations with **GSAP**
+
+### Projects
+
+- **Expense Tracker**: A simple app to manage and track expenses effectively.
+- **Spotify Clone**: A clean, functional clone focused on user-friendly design and smooth interactions.
+
+I’m currently working on exciting projects like:
+
+- **Country Finder**: A web app to search and explore country details.
+- **Blinkit Web App**: A MERN stack app integrated with **Google Gemini API** for intelligent recipe suggestions.
+
+💻 **Portfolio:** [divyesh23.netlify.app](https://divyesh23.netlify.app)  
+📂 Check out my **[Resume](https://divyesh23.netlify.app)**
+
+### Let’s Connect
+
+- **LinkedIn**: [Profile](#)
+- **GitHub**: [Profile](#)
+- **Email**: [Your Email](#)
+
+---
+
+Feel free to modify the links and details based on your actual profile!
