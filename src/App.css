@@ -175,10 +175,12 @@ body {
 
 @media (max-width: 768px) {
   .pages3 {
+    /* height: 100vh; */
+
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 234vh;
+    /* position: absolute; */
+    /* top: 234vh; */
     height: unset;
   }
 
@@ -190,15 +192,15 @@ body {
 
 @media (max-width: 480px) {
   .pages3 {
-    height: unset;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 232vh;
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    height: 62vh;
+    padding: 20px;
+    margin: 0;
   }
 
   .logo {
-    height: 100vh;
+    height: 90vh;
     margin: 20px;
     object-fit: cover;
   }

@@ -48,7 +48,7 @@ function App() {
       scrollTrigger: {
         trigger: ".imgSide1",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 60%",
       },
     });
@@ -60,8 +60,8 @@ function App() {
       scrollTrigger: {
         trigger: ".pages3 a",
         scroller: "body",
-        markers: true,
-        start: "top 80%",
+        // markers: true,
+        start: "top bottom",
       },
     });
   });
