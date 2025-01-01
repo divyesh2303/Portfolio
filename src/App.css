@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #111;
+  color: #e8ecd7;
+}
+
+/* ==========================================Page one================================ */
+.pages1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 2vh;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 2vh;
+  display: flex;
+  font-size: 2vh;
+  justify-content: center;
+  gap: 1.5vw;
+}
+
+.view-work {
+  padding: 1vh;
+  background: #eed3b1;
+  border-radius: 2vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.view-work:hover {
+  border-color: #eed3b1;
+  color: #e8ecd7;
+  background: none;
+}
+
+.download-resume {
+  padding: 1vh;
+  border: 1px solid #eed3b1;
+  color: #e8ecd7;
+  border-radius: 2vh;
+  background: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.download-resume:hover {
+  color: black;
+  background: #eed3b1;
+}
+
+/* ===========================================Page Two================================ */
+.pages2 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2vh;
+}
+
+.pages2 > p {
+  font-size: 1.8vw;
+}
+
+@media (max-width: 480px) {
+  .pages2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: unset;
+  }
+  .imgSide1,
+  .imgSide2 {
+    height: 30vh;
+    width: 67vw;
+    font-size: 10px;
+  }
+  .pages2 > p {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 768px) {
+  .pages2 {
+    height: 132vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .pages2 > a > img {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+    width: 100%;
+  }
+  .imgSide1 {
+    height: 30vh;
+    width: 70vw;
+    font-size: 10px;
+  }
+  .imgSide2 {
+    height: 35vh;
+    width: 70vw;
+    font-size: 10px;
+  }
+  .pages2 > p {
+    font-size: 5vw;
+    height: 31vh;
+    margin: 0;
+  }
+}
+
+.text {
+  filter: drop-shadow(0 0 3vh rgb(229, 255, 0));
+  -webkit-filter: drop-shadow(0 0 3vh crimson);
+}
+
+/* ====================================================Page Three================================ */
+.pages3 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.logo.whatsapp:hover {
+  filter: drop-shadow(0 0 9vh #64ff6c);
+  padding: 1vh;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 9vh #64acff);
+  padding: 1vh;
+}
+
+.logo.github:hover {
+  filter: drop-shadow(0 0 9vh #fff);
+  padding: 1vh;
+}
+
+.logo.email:hover {
+  filter: drop-shadow(0 0 9vh #ddff64);
+  padding: 1vh;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .pages3 .logo {
+    width: 15vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .pages3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 234vh;
+    height: unset;
+  }
+
+  .logo {
+    width: 13vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pages3 {
+    height: unset;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 232vh;
+  }
+
+  .logo {
+    height: 100vh;
+    margin: 20px;
+    object-fit: cover;
+  }
+}
