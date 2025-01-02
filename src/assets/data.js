@@ -1,0 +1,81 @@
+import Music from "./images/music.png";
+
+const data = [
+  // projects: [
+  //   {
+  //     id: 0,
+  //     img: Music,
+  //     name: "TuneTown",
+  //     description:
+  //       "Creating a TuneTown website using HTML, CSS, and JS would involve designing a platform for creating, contributing to, and sharing music.",
+  //     live: "https://divyeshs2303.github.io/Music-/",
+  //     github: "https://github.com/Divyeshs2303/Music-",
+  //   },
+  //   {
+  //     id: 1,
+  //     img: Music,
+  //     name: "TuneTown",
+  //     description:
+  //       "Creating a TuneTown website using HTML, CSS, and JS would involve designing a platform for creating, contributing to, and sharing music.",
+  //     live: "https://divyeshs2303.github.io/Music-/",
+  //     github: "https://github.com/Divyeshs2303/Music-",
+  //   },
+  //   {
+  //     id: 2,
+  //     img: Music,
+  //     name: "TuneTown",
+  //     description:
+  //       "Creating a TuneTown website using HTML, CSS, and JS would involve designing a platform for creating, contributing to, and sharing music.",
+  //     live: "https://divyeshs2303.github.io/Music-/",
+  //     github: "https://github.com/Divyeshs2303/Music-",
+  //   },
+  //   {
+  //     id: 3,
+  //     img: Music,
+  //     name: "TuneTown",
+  //     description:
+  //       "Creating a TuneTown website using HTML, CSS, and JS would involve designing a platform for creating, contributing to, and sharing music.",
+  //     live: "https://divyeshs2303.github.io/Music-/",
+  //     github: "https://github.com/Divyeshs2303/Music-",
+  //   },
+  // ],
+  // education: [
+  {
+    degree: "Commerce.",
+    school: "Krutika Vidhyalaya",
+    location: "Ahmedabad, Guj",
+    duration: "2019 - 2021",
+    description:
+      "Focused on commerce basics like accounting, economics, and business studies.",
+    courses: ["Accountancy", "Business Studies", "Economics", "Mathematics"],
+  },
+  {
+    degree: "Bachelor of Computer Applications.",
+    school: "Gujarat Technological University",
+    location: "Ahmedabad, Guj",
+    duration: "2021 - 2024",
+    description: "Major in Computer Science with minor in Mathematics",
+    courses: [
+      "Fronted Developer",
+      "Responsive Web Design",
+      "CSS Flexbox and Grid",
+      "Web Development",
+    ],
+  },
+  {
+    degree: "Master of Computer Applications.",
+    school: "Gujarat Technological University",
+    location: "Ahmedabad, Guj",
+    duration: "2024 - 2026",
+    description: "Specialized in Artificial Intelligence and Machine Learning",
+    courses: [
+      "React and Redux",
+      "Machine Learning",
+      "Node.js and Express",
+      "Full Stack Development with MERN",
+    ],
+  },
+];
+// };
+
+export default data;

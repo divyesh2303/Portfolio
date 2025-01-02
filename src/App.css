@@ -11,6 +11,22 @@ body {
   background-color: #111;
   color: #e8ecd7;
 }
+#root {
+  position: relative;
+}
+.text-center {
+  background: linear-gradient(90deg, #e8ecd7, #eed3b1); /* Gradient for text */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  text-fill-color: transparent; /* Support for non-WebKit browsers */
+  filter: drop-shadow(
+    0 0 10px rgba(255, 255, 255, 0.8)
+  ); /* Drop shadow effect */
+  -webkit-filter: drop-shadow(
+    0 0 10px rgba(255, 255, 255, 0.8)
+  ); /* WebKit compatibility */
+  text-align: center; /* Align text to the center */
+}
 
 /* ==========================================Page one================================ */
 .pages1 {
@@ -198,4 +214,13 @@ body {
     margin: 20px;
     object-fit: cover;
   }
+}
+/* ========================================================pages4============================================================= */
+.pages4 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
 }
