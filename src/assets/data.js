@@ -41,39 +41,27 @@ const data = [
   // ],
   // education: [
   {
-    degree: "Commerce.",
-    school: "Krutika Vidhyalaya",
-    location: "Ahmedabad, Guj",
-    duration: "2019 - 2021",
-    description:
+    degree: [
+      "Commerce.",
+      "Bachelor of Computer Applications.",
+      "Master of Computer Applications.",
+    ],
+    school: [
+      "Krutika Vidhyalaya",
+      "Gujarat Technological University",
+      "Gujarat Technological University",
+    ],
+    location: ["Ahmedabad, Guj", "Ahmedabad, Guj", "Ahmedabad, Guj"],
+
+    duration: ["2019 - 2021", "2021 - 2024", "2024 - 2026"],
+
+    description: [
       "Focused on commerce basics like accounting, economics, and business studies.",
+      "Focused on commerce basics like accounting, economics, and business studies.",
+      "Major in Computer Science with minor in Mathematics",
+    ],
+
     courses: ["Accountancy", "Business Studies", "Economics", "Mathematics"],
-  },
-  {
-    degree: "Bachelor of Computer Applications.",
-    school: "Gujarat Technological University",
-    location: "Ahmedabad, Guj",
-    duration: "2021 - 2024",
-    description: "Major in Computer Science with minor in Mathematics",
-    courses: [
-      "Fronted Developer",
-      "Responsive Web Design",
-      "CSS Flexbox and Grid",
-      "Web Development",
-    ],
-  },
-  {
-    degree: "Master of Computer Applications.",
-    school: "Gujarat Technological University",
-    location: "Ahmedabad, Guj",
-    duration: "2024 - 2026",
-    description: "Specialized in Artificial Intelligence and Machine Learning",
-    courses: [
-      "React and Redux",
-      "Machine Learning",
-      "Node.js and Express",
-      "Full Stack Development with MERN",
-    ],
   },
 ];
 // };

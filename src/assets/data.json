@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "degree": "Commerce.",
+            "degree": "Commerce",
             "school": "Krutika Vidhyalaya",
             "location": "Ahmedabad, Guj",
             "duration": "2019 - 2021",
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "degree": "Bachelor of Computer Applications.",
+            "degree": "Bachelor of Computer Applications",
             "school": "Gujarat Technological University",
             "location": "Ahmedabad, Guj",
             "duration": "2021 - 2024",
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "degree": "Master of Computer Applications.",
+            "degree": "Master of Computer Applications",
             "school": "Gujarat Technological University",
             "location": "Ahmedabad, Guj",
             "duration": "2024 - 2026",

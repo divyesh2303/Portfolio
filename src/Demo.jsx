@@ -6,20 +6,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Divyesh from "./assets/images/Divyesh.png";
 import tag from "./assets/images/tag.png";
 import computer from "./assets/images/computer.png";
+import data from "./assets/data";
 import whatsapp from "./assets/svg/whatsapp.svg";
 import linkedin from "./assets/svg/linkedin.svg";
 import github from "./assets/svg/github.svg";
 import email from "./assets/svg/email.svg";
-import Education from "./Education";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function App() {
+function Demo() {
   useEffect(() => {
     const mm = gsap.matchMedia();
 
+    // Animations for devices >= 768px (Laptop and Tablet)
     mm.add("(min-width: 768px)", () => {
-      // Animations for laptop and larger screens
       gsap.from(".hero-text", {
         y: 20,
         opacity: 0,
@@ -70,28 +70,28 @@ function App() {
       });
     });
 
-    mm.add("(max-width: 767px)", () => {
-      // Animations for mobile screens
+    // Animations for devices between 480px and 767px (Small tablets and large phones)
+    mm.add("(max-width: 767px) and (min-width: 481px)", () => {
       gsap.from(".hero-text", {
-        y: 10,
+        y: 15,
         opacity: 0,
         duration: 1,
-        scale: 0.6,
+        scale: 0.7,
       });
 
       gsap.from(".buttons a", {
         y: 30,
         opacity: 0,
         duration: 0.8,
-        stagger: 0.1,
+        stagger: 0.15,
         ease: "power1.out",
       });
 
       gsap.from(".imgSide1", {
         opacity: 0,
-        duration: 1.5,
-        x: 200,
-        ease: "elastic.out(1,0.75)",
+        duration: 1.8,
+        x: 250,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: ".imgSide1",
           scroller: "body",
@@ -101,9 +101,9 @@ function App() {
 
       gsap.from(".imgSide2", {
         opacity: 0,
-        duration: 1.5,
-        x: -200,
-        ease: "elastic.out(1,0.75)",
+        duration: 1.8,
+        x: -250,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: ".imgSide2",
           scroller: "body",
@@ -113,11 +113,63 @@ function App() {
 
       gsap.from(".pages3 a", {
         scale: 0,
-        duration: 1.5,
+        duration: 1.8,
         rotate: 180,
         scrollTrigger: {
           trigger: ".pages3",
           start: "top 85%",
+        },
+      });
+    });
+
+    // Animations for devices <= 480px (Small phones)
+    mm.add("(max-width: 480px)", () => {
+      gsap.from(".hero-text", {
+        y: 10,
+        opacity: 0,
+        duration: 1,
+        scale: 0.6,
+      });
+
+      gsap.from(".buttons a", {
+        y: 20,
+        opacity: 0,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: "power1.out",
+      });
+
+      gsap.from(".imgSide1", {
+        opacity: 0,
+        duration: 1.5,
+        x: 200,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".imgSide1",
+          scroller: "body",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".imgSide2", {
+        opacity: 0,
+        duration: 1.5,
+        x: -200,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".imgSide2",
+          scroller: "body",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".pages3 a", {
+        scale: 0,
+        duration: 1.5,
+        rotate: 90,
+        scrollTrigger: {
+          trigger: ".pages3",
+          start: "top 90%",
         },
       });
     });
@@ -153,7 +205,6 @@ function App() {
           </a>
         </div>
       </div>
-
       {/* Page 2 */}
       <div className="container pages2">
         <img
@@ -184,7 +235,6 @@ function App() {
           height={410}
         />
       </div>
-
       {/* Contact Section */}
       <div className="text-center">
         <h1>Contact Me</h1>
@@ -243,13 +293,8 @@ function App() {
           />
         </a>
       </div>
-
-      {/* Education Section */}
-      {/* <div className="container pages4"> */}
-      <Education />
-      {/* </div> */}
     </>
   );
 }
 
-export default App;
+export default Demo;

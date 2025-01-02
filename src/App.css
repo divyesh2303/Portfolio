@@ -115,11 +115,11 @@ body {
 }
 @media (max-width: 768px) {
   .pages2 {
-    height: 132vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: 146vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-content: center;
+    align-items: center; */
   }
   .pages2 > a > img {
     display: flex;
@@ -128,8 +128,8 @@ body {
     width: 100%;
   }
   .imgSide1 {
-    height: 30vh;
-    width: 70vw;
+    height: 37vh;
+    width: 62vw;
     font-size: 10px;
   }
   .imgSide2 {
@@ -138,7 +138,7 @@ body {
     font-size: 10px;
   }
   .pages2 > p {
-    font-size: 5vw;
+    font-size: 4vw;
     height: 31vh;
     margin: 0;
   }
@@ -146,7 +146,7 @@ body {
 
 .text {
   filter: drop-shadow(0 0 3vh rgb(229, 255, 0));
-  -webkit-filter: drop-shadow(0 0 3vh crimson);
+  -webkit-filter: drop-shadow(0 0 3vh rgb(229, 255, 0));
 }
 
 /* ====================================================Page Three================================ */
@@ -182,8 +182,6 @@ body {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .pages3 .logo {
-    width: 15vw;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -205,22 +203,58 @@ body {
 @media (max-width: 480px) {
   .pages3 {
     height: 62vh;
-    padding: 20px;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .logo {
-    height: 90vh;
-    margin: 20px;
+    height: 15vh;
+    width: 33vw;
+    margin: 23px;
+    padding: 10px;
     object-fit: cover;
   }
 }
 /* ========================================================pages4============================================================= */
 .pages4 {
-  height: 100vh;
+  height: 80vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: 2vw;
+}
+
+.card-body {
+  height: 20rem;
+  padding: 2vw;
+  border: 2px solid #eed3b1;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.degree-title {
+  color: #e8ecd7;
+}
+.loc-tim span {
+  margin: 0 6px;
+  font-weight: 300;
+}
+svg {
+  font-size: x-large;
+}
+@media (max-width: 480px) {
+  .pages4 {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    position: relative;
+    top: 27px;
+  }
+  .card-body {
+    height: 10rem;
+  }
 }
