@@ -217,7 +217,7 @@ function App() {
           />
         </a>
         <a
-          href="https://github.com/Divyeshs2303"
+          href="https://github.com/divyesh2303"
           target="_blank"
           rel="noopener noreferrer"
         >

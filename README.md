@@ -8,7 +8,7 @@
 ### Let’s Connect
 
 - **LinkedIn**: [Profile](https://www.linkedin.com/in/divyesh-solanki-01628a254/)
-- **GitHub**: [Profile](https://github.com/Divyeshs2303)
+- **GitHub**: [Profile](https://github.com/divyesh2303)
 - **Email**: [Your Email](mailto:divyeshsolanki2303@gmail.com)
 
 ---
